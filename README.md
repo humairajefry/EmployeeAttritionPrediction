@@ -131,12 +131,6 @@ Run the test suite using:
 pytest
 ```
 
-or
-
-```bash
-PYTHONPATH=. pytest
-```
-
 ---
 
 ## Technologies Used
