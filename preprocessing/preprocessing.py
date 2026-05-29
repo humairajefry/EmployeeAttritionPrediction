@@ -9,6 +9,15 @@ from sklearn.model_selection import train_test_split
 
 
 def preprocess_data(df):
+    """
+    Clean and preprocess the employee attrition dataset.
+
+    Parameters:
+        df (pandas.DataFrame): Raw dataset.
+
+    Returns:
+        pandas.DataFrame: Processed dataset.
+    """
 
     # Drop unnecessary columns
     df = df.drop(
@@ -46,7 +55,15 @@ def preprocess_data(df):
 
 
 def split_data(df):
+    """
+    Split dataset into training and testing sets and apply scaling.
 
+    Parameters:
+        df (pandas.DataFrame): Processed dataset.
+
+    Returns:
+        tuple: X_train, X_test, y_train, y_test
+    """
     X = df.drop('Attrition', axis=1)
 
     y = df['Attrition']

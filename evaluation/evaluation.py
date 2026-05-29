@@ -10,7 +10,16 @@ def evaluate_model(
     X_test,
     y_test
 ):
+    """
+    Evaluate model performance using accuracy,
+    classification report, and confusion matrix.
 
+    Parameters:
+        model: Trained machine learning model.
+        X_test: Testing features.
+        y_test: True labels.
+    """
+    
     predictions = model.predict(X_test)
 
     accuracy = accuracy_score(
