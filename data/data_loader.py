@@ -9,7 +9,7 @@ def load_data():
     """
 
     df = pd.read_csv(
-        "employee_attrition.csv"
+        "data/employee_attrition.csv"
     )
 
     return df
