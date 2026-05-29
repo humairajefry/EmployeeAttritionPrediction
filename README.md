@@ -34,6 +34,7 @@ employee_attrition_prediction/
 ├── data/
 │   ├── **init**.py
 │   └── data_loader.py
+│   └── employee_attrition.csv
 │
 ├── preprocessing/
 │   ├── **init**.py
@@ -55,12 +56,10 @@ employee_attrition_prediction/
 │   ├── **init**.py
 │   └── test_model.py
 │
-├── main.py
-├── config.py
-├── requirements.txt
-├── README.md
 ├── .gitignore
-└── WA_Fn-UseC_-HR-Employee-Attrition.csv
+├── main.py
+├── README.md
+└── requirements.txt
 
 ---
 
