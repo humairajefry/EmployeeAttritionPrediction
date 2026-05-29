@@ -31,35 +31,35 @@ The dataset contains employee-related information such as demographic details, j
 
 employee_attrition_prediction/
 
-├── data/
-│   ├── **init**.py
-│   └── data_loader.py
-│   └── employee_attrition.csv
-│
-├── preprocessing/
-│   ├── **init**.py
-│   └── preprocessing.py
-│
-├── models/
-│   ├── **init**.py
-│   └── train_model.py
-│
-├── evaluation/
-│   ├── **init**.py
-│   └── evaluation.py
-│
-├── utils/
-│   ├── **init**.py
-│   └── visualization.py
-│
-├── tests/
-│   ├── **init**.py
-│   └── test_model.py
-│
-├── .gitignore
-├── main.py
-├── README.md
-└── requirements.txt
+data/
+* __init__.py
+* data_loader.py
+* employee_attrition.csv
+
+preprocessing/
+* __init__.py
+* preprocessing.py
+
+models/
+* __init__.py
+* train_model.py
+
+evaluation/
+* __init__.py
+* evaluation.py
+
+utils/
+* __init__.py
+* visualization.py
+
+tests/
+* __init__.py
+* test_model.py
+
+.gitignore
+main.py
+README.md
+requirements.txt
 
 ---
 
