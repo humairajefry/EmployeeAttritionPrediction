@@ -57,8 +57,11 @@ tests/
 * test_model.py
 
 .gitignore
+
 main.py
+
 README.md
+
 requirements.txt
 
 ---
