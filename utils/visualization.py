@@ -7,8 +7,18 @@ from sklearn.metrics import confusion_matrix
 def plot_confusion_matrix(
     model,
     X_test,
-    y_test
+    y_test,
+    filename
 ):
+    """
+    Generate and save a confusion matrix heatmap.
+
+    Parameters:
+        model: Trained machine learning model.
+        X_test: Testing features.
+        y_test: True labels.
+        filename: Output image file name.
+    """
 
     predictions = model.predict(X_test)
 
@@ -22,14 +32,13 @@ def plot_confusion_matrix(
     sns.heatmap(
         cm,
         annot=True,
-        fmt='d',
-        cmap='Blues'
+        fmt="d",
+        cmap="Blues"
     )
 
     plt.title("Confusion Matrix")
-
     plt.xlabel("Predicted")
-
     plt.ylabel("Actual")
 
-    plt.show()
+    plt.savefig(filename)
+    plt.close()
